@@ -19,7 +19,12 @@
         {
             <tr>
                 <td>@item.CourseNumber</td>
-                <td>@item.CourseName</td>
+                <td>
+                    <a asp-controller="Courses" asp-action="Index" asp-route-id="@item.CourseID">
+                        @item.CourseName
+
+                     </a>
+                </td>
                 <td>@item.CourseDescription</td>
             </tr>
         }

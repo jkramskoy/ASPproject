@@ -25,6 +25,7 @@ namespace CourseRegistrationProgram.Models
         [DataType(DataType.PhoneNumber)]
         public string PhoneNumber { get; set; }
 
-        public List<CoursesModel> Courses { set; get; }
+        public int CourseID { set; get; }
+        public CoursesModel Courses { set; get; }
     }
 }

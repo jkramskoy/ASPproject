@@ -16,5 +16,13 @@ namespace CourseRegistrationProgram.Controllers
             var model = Helper.GetStudentsData();
             return View(model);
         }
+
+        /*
+        public IActionResult Index(int courseId)
+        {
+            var model = Helper.GetStudentsData();
+            return View(model);
+        }
+        */
     }
 }
