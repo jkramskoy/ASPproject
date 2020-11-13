@@ -41,7 +41,7 @@ namespace CourseRegistrationProgram
             var list = new List<InstructorsModel>
             {
                 new InstructorsModel(){ FirstName = "Lary", LastName = "Lopster", EmailAddress = "lary@gmail.com", Course = "Accountant" },
-                new InstructorsModel(){ FirstName = "Mark", LastName = "Moren", EmailAddress = "mark@gmail.com", Course = "Project Manager" },
+                new InstructorsModel(){ FirstName = "Mark", LastName = "Moren", EmailAddress = "markus@gmail.com", Course = "Project Manager" },
                 new InstructorsModel(){ FirstName = "Sam", LastName = "Keg", EmailAddress = "sam@gmail.com", Course = "Front End Developer" },
                 new InstructorsModel(){ FirstName = "Jerry", LastName = "Zeep", EmailAddress = "jerry@gmail.com", Course = "Dental assistant" },
             };
