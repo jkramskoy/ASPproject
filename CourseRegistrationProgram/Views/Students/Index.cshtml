@@ -1,0 +1,34 @@
+﻿@model IEnumerable<CourseRegistrationProgram.Models.StudentsModel>
+
+@{
+    ViewData["Title"] = "Students List";
+}
+
+
+    <h2>Students: </h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>EmailAddress</th>
+            <th>PhoneNumber</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+            <td>@item.EmailAddress</td>
+            <td>@item.PhoneNumber</td>
+        </tr>
+    }
+    </tbody>
+
+
+
+
+
+</table>
