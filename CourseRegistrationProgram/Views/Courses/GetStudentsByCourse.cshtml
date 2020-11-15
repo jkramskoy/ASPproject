@@ -1,0 +1,27 @@
+﻿@model IEnumerable<CourseRegistrationProgram.Models.StudentsModel>
+
+@{
+    ViewData["Title"] = "Courses List";
+}
+
+    <h1>A list of students per course: </h1>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Studen Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+

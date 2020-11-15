@@ -25,7 +25,7 @@ namespace CourseRegistrationProgram.Models
         [DataType(DataType.PhoneNumber)]
         public string PhoneNumber { get; set; }
 
-        public int CourseID { set; get; }
-        public CoursesModel Courses { set; get; }
+       // acording to data studenr can take few corses
+        public List<CoursesModel> CoursesList { set; get; }
     }
 }

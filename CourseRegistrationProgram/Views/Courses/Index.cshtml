@@ -6,12 +6,14 @@
 
 
 <h2>Courses: </h2>
+
+
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>CourseNumber</th>
-            <th>CourseName</th>
-            <th>CourseDescription</th>
+            <th>Course Number</th>
+            <th>Course Name</th>
+            <th>Course Description</th>
         </tr>
     </thead>
     <tbody>
@@ -20,19 +22,14 @@
             <tr>
                 <td>@item.CourseNumber</td>
                 <td>
-                    <a asp-controller="Courses" asp-action="Index" asp-route-id="@item.CourseID">
+                    <a asp-controller="Courses" asp-action="GetStudentsByCourse" asp-route-courseId="@item.CourseID">
                         @item.CourseName
-
-                     </a>
+                    </a>
                 </td>
                 <td>@item.CourseDescription</td>
             </tr>
         }
     </tbody>
-
-
-
-
 
 </table>
 

@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CourseRegistrationProgram.Models
 {
-    public class CoursesModel
+    public class CoursesModel : IEquatable<CoursesModel>
     {
         public CoursesModel()
         {
@@ -20,9 +20,18 @@ namespace CourseRegistrationProgram.Models
         [StringLength(50, MinimumLength = 3)]
         public string CourseDescription { get; set; }
 
-        public List<InstructorsModel> Courses { set; get; }
-        public List<StudentsModel> Students { set; get; }
+        
 
-
+        public bool Equals(CoursesModel other) {
+            if (this.CourseID == other.CourseID && this.CourseNumber == other.CourseNumber
+            && this.CourseName == other.CourseName && this.CourseDescription == other.CourseDescription)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
